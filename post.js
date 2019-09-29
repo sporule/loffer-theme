@@ -25,10 +25,10 @@ const PostTemplate = (props) => {
                                 {props.post.metas.tags.map((tag, index) => {
                                     return (
                                         <li key={index}>
-                                            <a href="/">
-                                                {tag}
-                                            </a>
-                                        </li>
+                                        <a href={"/?tags=" + tag}>
+                                            {tag}
+                                        </a>
+                                    </li>
                                     );
                                 })}
 
