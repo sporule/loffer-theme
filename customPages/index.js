@@ -2,7 +2,10 @@
 import Posts from "./posts";
 
 const CustomPages = {
-    "posts":Posts
+    "posts": {
+        "title": "Posts",
+        "component": Posts
+    }
 }
 
 export default CustomPages;
