@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const PostsTemplate = (props) => {
+const Posts = (props) => {
     var prev;
     var next;
     var categories;
@@ -100,4 +100,4 @@ const PostsTemplate = (props) => {
 }
 
 
-export default PostsTemplate
+export default Posts

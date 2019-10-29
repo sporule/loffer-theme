@@ -1,9 +1,8 @@
-/*
-import Example from "./example";
+
+import Posts from "./posts";
 
 const CustomPages = {
-    "example":Example
+    "posts":Example
 }
 
 export default CustomPages;
-*/
