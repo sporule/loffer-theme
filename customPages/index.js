@@ -2,7 +2,7 @@
 import Posts from "./posts";
 
 const CustomPages = {
-    "posts":Example
+    "posts":Posts
 }
 
 export default CustomPages;
