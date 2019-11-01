@@ -4,7 +4,7 @@ import Posts from "./posts";
 const CustomPages = {
     "home":{
         "title":"Home",
-        "component": Home
+        "component": Posts
     },
     "posts": {
         "title": "Posts",
