@@ -20,7 +20,7 @@ const NavTemplate = () => {
                     {
                         Object.keys(TemplateConfig.navs).map((index, key) => {
                             return (
-                                <Link key={index} href={TemplateConfig.navs[index]}>{index}</Link>
+                                <Link key={index} to={TemplateConfig.navs[index]}>{index}</Link>
                             );
                         })
                     }
