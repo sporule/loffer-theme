@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 const PostTemplate = (props) => {
     return (
@@ -17,7 +18,7 @@ const PostTemplate = (props) => {
                             {props.post.metas.categories.map((category, index) => {
                                 return (
                                     <span className="category" key={index}>
-                                        <a href={"/categories/" + category}>{category}</a>
+                                        <Link to={"/categories/" + category}>{category}</Link>
                                     </span>
                                 );
                             })}
@@ -25,9 +26,9 @@ const PostTemplate = (props) => {
                                 {props.post.metas.tags.map((tag, index) => {
                                     return (
                                         <li key={index}>
-                                        <a href={"/?tags=" + tag}>
+                                        <Link to={"/?tags=" + tag}>
                                             {tag}
-                                        </a>
+                                        </Link>
                                     </li>
                                     );
                                 })}

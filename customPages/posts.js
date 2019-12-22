@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 
 const Posts = (props) => {
     var prev;
@@ -40,7 +40,7 @@ const Posts = (props) => {
                         return (
                             <article key={index} className="post">
                                 <h1>
-                                    <a href={md.link}>{md.title}</a>
+                                    <Link to={md.link}>{md.title}</Link>
                                 </h1>
 
                                 <div className="meta">
@@ -50,7 +50,7 @@ const Posts = (props) => {
                                     {md.metas.categories.map((category, index) => {
                                         return (
                                             <span className="category" key={index}>
-                                                <a href={"/categories/" + category}>{category}</a>
+                                                <Link to={"/categories/" + category}>{category}</Link>
                                             </span>
                                         );
                                     })}
@@ -58,9 +58,9 @@ const Posts = (props) => {
                                         {md.metas.tags.map((tag, index) => {
                                             return (
                                                 <li key={index}>
-                                                    <a href={"/?tags=" + tag}>
+                                                    <Link to={"/?tags=" + tag}>
                                                         {tag}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             );
                                         })}
@@ -85,7 +85,7 @@ const Posts = (props) => {
                                     <p>{md.excerpt}</p>
                                 </div>
 
-                                <a href={md.link} className="read-more">Read More</a>
+                                <Link to={md.link} className="read-more">Read More</Link>
                             </article>
                         );
                     })}
